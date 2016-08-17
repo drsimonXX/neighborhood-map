@@ -4,7 +4,7 @@
   <title>Chicagoland's Best Food</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
   <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js">--></script>
   <style>
@@ -341,7 +341,7 @@
     
     function makeMarkerIcon(markerColor) {
       var markerImage = new google.maps.MarkerImage(
-        'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|'+ markerColor +
+        'https://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|'+ markerColor +
           '|40|_|%E2%80%A2',
           new google.maps.Size(21, 34),
           new google.maps.Point(0, 0),
@@ -573,19 +573,6 @@
           marker.setAnimation(null);
         }, 2100);
     }
-
-/*var wikiURL ='https://en.wikipedia.org/w/api.php?action=opensearch&format=json&callback=wikiCallBack&search=';
-this.searchWiki = locations.title;
-
-$.ajax({
-    url: wikiURL+self.searchWiki,
-    dataType: 'jsonp',
-    timeout: 1000
-  }).done(function(data) {
-       self.content = '<h3>' + self.title() + '</h3>'+'<p>' + data[2][0] +'<a href=' + data[3][0] + ' target="blank"><br>Wikipedia</a></p>';
-  }).fail(function(jqXHR, textStatus){
-      alert("failed to get wikipedia resources");
-  });*/
 
 
 </script>
