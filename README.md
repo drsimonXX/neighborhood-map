@@ -15,4 +15,7 @@ Neighborhood Map is a site that highlights some of the best food places in the S
 - To find places within a specific distance from the food places highlighted in the project, enter an address or location name in the "Filter To Within..." search box. Select the amount of time you'd prefer to travel via the accompanying dropdown box. The map will populate with the results, including travel time and the option to "view route."
 - To find out more information about the highlighted food places, click the markers on the map or the side links. The markers will show a window with the business name, an image of the business, a Wikipedia link and street view options.  
 
+##Known Issues - August 23, 2016
+- The map broke for mobile views with one of the updates. Working to reconcile the necessary update with the mobile map view.
+
 
