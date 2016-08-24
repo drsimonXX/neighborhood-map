@@ -5,6 +5,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <style>
+    body {
+      background-color: #262626;
+      color: gray;
+      font-weight: bold;
+    }
+	
+    a {
+	  color: gray;
+	}
+
+    li {
+      list-style-type: none;
+      padding-bottom: 15px;
+    }
+
+    #map {
+      height: 50%;
+      margin-top: 20px;
+    }
+
+    options-box {
+      background: #fff;
+      border: 1px solid #999;
+      border-radius: 3px;
+      height: 100%;
+      line-height: 35px;
+      padding: 10px 10px 30px 10px;
+      text-align: left;
+      width: 340px;
+    }
+
+    #pano {
+      width: 200px;
+      height: 200px;
+    }
+
+    #search-within-time-text {
+      width: 20%;
+    }
+
+    #mode {
+      margin-bottom: 5px;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+
+    #places-search {
+      width: 20%;
+      margin-top: 5px;
+    }
+
+    /*a:active {
+      color: #ffcccc;
+    }*/
+
+    @media only screen and (min-width: 1024px) {
+      #map {
+        height: 100%;
+        bottom: 0px;
+        left: 362px;
+        position: absolute;
+        right: 0px;
+      }
+    }
+
+    @media only screen and (max-width: 1023px) and (min-width: 481px) {
+      #map {
+        height: 70%;
+        position: relative;
+      }
+      body {
+        font-size: 1.2em;
+      }
+      #show-listings {
+        height: 7%;
+      }
+      #hide-listings {
+        height: 7%;
+      }
+      #pano {
+        width: 150px;
+        height: 150px;
+      }
+      #places-search {
+        width: 70%;
+        height: 7%;
+        margin-top: 5px;
+      }
+      #go-places {
+        width: 20%;
+        height: 7%;
+      }
+      #max-duration {
+        height: 7%;
+      }
+      #mode {
+        height: 7%;
+      }
+      #search-within-time-text {
+        width: 70%;
+        height: 7%;
+      }
+      #search-within-time {
+        width: 20%;
+        height: 7%;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      #map {
+        height: 50%;
+        position: relative;
+      }
+      body {
+        font-size: 1.2em;
+      }
+      #show-listings {
+        height: 5%;
+      }
+      #hide-listings {
+        height: 5%;
+      }
+      #pano {
+        width: 150px;
+        height: 100px;
+      }
+      #places-search {
+        width: 70%;
+        height: 5%;
+        margin-top: 5px;
+      }
+      #go-places {
+        width: 20%;
+        height: 5%;
+      }
+      #max-duration {
+        height: 5%;
+      }
+      #mode {
+        height: 5%;
+      }
+      #search-within-time-text {
+        width: 70%;
+        height: 5%;
+      }
+      #search-within-time {
+        width: 20%;
+        height: 5%;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -54,7 +208,7 @@
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.3.0.js"></script>
 <!--<script type="text/javascript" src="js/lib/knockout-3.3.0.js"></script>-->
 <script type="text/javascript" src="js/script.js"></script>
-<link rel="stylesheet" href="css/style.css">
+<!--<link rel="stylesheet" href="css/style.css">-->
 <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyDn4MWVXlPLvnVxWC2FLldm5MEntRbfkrU&v=3&callback=initMap" onerror="googleError()">
 </script>
 </script>
